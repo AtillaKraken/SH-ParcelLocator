@@ -4,6 +4,11 @@ const userSettingsStore = useUserSettingsStore()
 </script>
 
 <template>
-  <button @click="userSettingsStore.theme = 'dark'">Enable dark mode</button>
-  <button @click="userSettingsStore.theme = 'light'">Enable light mode</button>
+  <BButton
+    :variant="userSettingsStore.isDarkMode ? 'outline-light' : 'outline-dark'"
+    size="sm"
+    @click="userSettingsStore.toggleTheme()"
+  >
+    {{ userSettingsStore.isDarkMode ? '🌝️ Light Mode' : '🌚 Dark Mode' }}
+  </BButton>
 </template>
