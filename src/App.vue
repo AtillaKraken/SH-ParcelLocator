@@ -8,10 +8,9 @@ import FooterBar from '@/components/common/FooterBar.vue'
     class="d-flex justify-content-between align-items-center p-3 border-bottom"
   ></HeaderNavbar>
   <RouterView
-    class="d-flex justify-content-between align-items-center p-3 border-bottom"
   ></RouterView>
   <FooterBar
-    class="d-flex justify-content-between align-items-center p-3 border-bottom"
+    class="d-flex justify-content-between align-items-center p-3"
   ></FooterBar>
 </template>
 
