@@ -20,4 +20,13 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  server: {
+    proxy: {
+      '/bkg-wfs': {
+        target: 'https://sgx.geodatenzentrum.de',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/bkg-wfs/, ''),
+      },
+    },
+  },
 })
