@@ -19,6 +19,7 @@
     "bootstrap-vue-next": "^1.2.4",
     "ol": "^10.11.0",
     "pinia": "^4.0.3",
+    "unplugin-vue-components": "^32.1.0",
     "vue": "^3.5.45",
     "vue-router": "^5.3.1"
   },
